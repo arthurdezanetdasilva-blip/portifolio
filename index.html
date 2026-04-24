@@ -3,76 +3,123 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Curriculo</title>
+  <title>Meu Portfólio</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
- <header>
- <h1 style="color: rgb(255, 255, 255); text-align: center;">Bem-vindo ao Meu Curriculo</h1>
+
+<header>
+  <h1>Arthur Dezanet</h1>
+  <h2>Estudante de Programação Web</h2>
 
   <nav>
     <ul>
-      <li><a href="#home">Home</a></li>
       <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#experiencia">Experiência</a></li>
+      <li><a href="#conhecimentos">Conhecimentos</a></li>
+      <li><a href="#projetos">Projetos</a></li>
       <li><a href="#contato">Contato</a></li>
     </ul>
   </nav>
+</header>
 
-  <article id="home">
-    <h1></h1>
-  </article>
+<section id="sobre">
+  <h1>Sobre Mim</h1>
+
+  <p>
+    Sou uma pessoa comprometida, responsável e com facilidade para trabalhar em equipe.
+    Tenho interesse em aprender constantemente e evoluir na área de tecnologia.
+  </p>
+
+  <ul>
+    <li>Idade: 16 anos</li>
+    <li>Curso: Análise e Desenvolvimento de Sistemas</li>
+    <li>Instituição: Ulbra São Lucas</li>
+  </ul>
+
+  <h2>Objetivos</h2>
+  <p>
+    Busco crescer profissionalmente na área de desenvolvimento, adquirindo experiência
+    e aprimorando minhas habilidades técnicas.
+  </p>
+</section>
+
+<section id="conhecimentos">
+  <h1>Conhecimentos</h1>
+
+  <div class="card">HTML5</div>
+  <div class="card">CSS3</div>
+  <div class="card">Git / GitHub</div>
+  <div class="card">VS Code</div>
+  <div class="card">Lógica de Programação</div>
+</section>
+
+<section id="projetos">
+  <h1>Projetos</h1>
+
+  <div class="card">
+    <h3>Banco POO</h3>
+    <p>Projeto em Java simulando sistema bancário.</p>
+    <p>Status: Em desenvolvimento</p>
+    <a href="https://github.com/arthurdezanetdasilva-blip/bancopoo.git" target="_blank">
+      Ver projeto
+    </a>
+  </div>
+
+  <div class="card">
+    <h3>Clone YouTube</h3>
+    <p>Projeto de interface inspirado no YouTube, desenvolvido com HTML e CSS.</p>
+    <p>Status: Em desenvolvimento</p>
+    <a href="https://github.com/arthurdezanetdasilva-blip/youtube.git" target="_blank">
+      Ver projeto
+    </a>
+  </div>
+
+  <div class="card">
   
-  </header>
+  </div>
 
-  <hr>
+  <div class="card">
+    <h3>Projeto Futuro</h3>
+    <p>Aplicação completa com banco de dados.</p>
+    <p>Status: Planejamento</p>
+  </div>
 
-  <section id="sobre">
-    <h1>Sobre mim:</h1>
-    <h3>Tenho boas habilidades em equipe. Apesar da pouca experiência na área, estou motivado a crescer e entregar excelentes resultados.</h3>
+</section>
 
-    <h1>Objetivos:</h1>
-    <h3>Melhorar como profissional, ganhar experiência e entregar ótimos resultados.</h3>
-
-  </section>
-
-  <section id="experiencia">
-    <h1>Experiência:</h1>
-    <h2>Resumo profissional:</h2>
-    <h2>Formação acadêmica: Ulbra São Lucas.</h2>
-  </section>
-
-  <hr>
-
-  <article id="contato">
+<section id="contato">
   <h1>Contato</h1>
 
-  <h2>Meu portfólio:</h2>
-  <a href="" target="_blank">
-    <img src="https://img.icons8.com/ios11/512/FFFFFF/github.png" alt="github" width="80">
-  </a>
+  <p>Email: arthurdezanetdasilva@gmail.com</p>
+  <p>Cidade: Esteio - RS</p>
 
-  <br>
-  <br>
-  <a href="" target="_blank">
-    <img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail">
-  </a>
-  <br>
-  <span> Exemplo@gmail.com</span>
+  <h2>Redes</h2>
+  <a href="https://github.com/arthurdezanetdasilva-blip" target="_blank">GitHub</a>
 
-  <br>
-  <br>
+  <h2>Envie uma mensagem</h2>
 
-  <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp"> 
-  <h3>Telefone: (51)</h3>
+  <form action="https://formspree.io/f/xojyrwga" method="POST">
 
-  <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
-</article>
+    <label>Nome:</label><br>
+    <input type="text" name="nome" placeholder="Seu nome" required><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email" placeholder="Seu email" required><br><br>
+
+    <label>Mensagem:</label><br>
+    <textarea name="mensagem" placeholder="Sua mensagem" required></textarea><br><br>
+
+    <button type="submit">Enviar</button>
+
+  </form>
+</section>
 
 <footer>
-  <p>&copy; 2026 (colocar nome). Todos os direitos reservados.</p>
+  <p>Arthur Dezanet</p>
+  <p>Disciplina: Programação Web</p>
+  <p>Turma: 3B</p>
+  <p>Ano: 2026</p>
 </footer>
-
 
 </body>
 </html>
