@@ -315,7 +315,7 @@ button:active {
   border-radius: 50%;
   object-fit: cover;
   display: block;
-  margin: 15px auto;
+  margin: 20px auto;
   border: 3px solid #00bfff;
   box-shadow: 0 0 15px rgba(0, 191, 255, 0.5);
   transition: 0.3s;
