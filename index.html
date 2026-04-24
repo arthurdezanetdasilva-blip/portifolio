@@ -9,19 +9,23 @@
 
 <body>
 
-<header>
-  <h1>Arthur Dezanet</h1>
-  <h2>Estudante de Programação Web</h2>
+<!-- MENU HAMBÚRGUER -->
+<nav class="navbar">
 
-  <nav>
-    <ul>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#conhecimentos">Conhecimentos</a></li>
-      <li><a href="#projetos">Projetos</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-  </nav>
-</header>
+  <div class="logo">Portfólio</div>
+
+  <div class="hamburguer" onclick="toggleMenu()">
+    ☰
+  </div>
+
+  <ul id="menu">
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#conhecimentos">Conhecimentos</a></li>
+    <li><a href="#projetos">Projetos</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+
+</nav>
 
 <!-- SOBRE -->
 <section id="sobre">
@@ -52,33 +56,28 @@
   <div class="skills">
 
     <div class="card">
-      <img src="https://cdn-icons-png.flaticon.com/512/4248/4248443.png" alt="Banco de Dados">
+      <img src="https://cdn-icons-png.flaticon.com/512/4248/4248443.png">
       <h3>Banco de Dados</h3>
     </div>
 
     <div class="card">
-      <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png">
       <h3>HTML5</h3>
     </div>
 
     <div class="card">
-      <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png">
       <h3>CSS3</h3>
     </div>
 
     <div class="card">
-      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111425.png" alt="GitHub">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111425.png">
       <h3>Git / GitHub</h3>
     </div>
 
     <div class="card">
-      <img src="https://cdn-icons-png.flaticon.com/512/906/906324.png" alt="VS Code">
+      <img src="https://cdn-icons-png.flaticon.com/512/906/906324.png">
       <h3>VS Code</h3>
-    </div>
-
-    <div class="card">
-      <img src="https://cdn-icons-png.flaticon.com/512/1006/1006363.png" alt="Lógica">
-      <h3>Lógica de Programação</h3>
     </div>
 
   </div>
@@ -93,8 +92,7 @@
       <img src="https://img.icons8.com/ios-filled/200/ffffff/source-code.png">
     </a>
     <h3>Banco POO</h3>
-    <p>Sistema bancário em Java</p>
-    <p>Status: Em desenvolvimento</p>
+    <p>Projeto em Java</p>
   </div>
 
   <div class="card">
@@ -102,13 +100,12 @@
       <img src="https://img.icons8.com/ios-filled/200/ffffff/youtube-play.png">
     </a>
     <h3>Clone YouTube</h3>
-    <p>Interface inspirada no YouTube</p>
-    <p>Status: Em desenvolvimento</p>
+    <p>HTML e CSS</p>
   </div>
 
 </section>
 
-<!-- CONTATO (CORRIGIDO E ÚNICO) -->
+<!-- CONTATO -->
 <section id="contato" class="contato">
 
   <h1>Contato</h1>
@@ -139,14 +136,22 @@
     </form>
 
   </div>
+
 </section>
 
 <footer>
   <p>Arthur Dezanet</p>
-  <p>Disciplina: Programação Web</p>
+  <p>Programação Web</p>
   <p>Turma: 3B</p>
   <p>Ano: 2026</p>
 </footer>
+
+<!-- SCRIPT MENU -->
+<script>
+function toggleMenu() {
+  document.getElementById("menu").classList.toggle("ativo");
+}
+</script>
 
 </body>
 </html>
