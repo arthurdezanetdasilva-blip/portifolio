@@ -1,68 +1,68 @@
- body {
+* {
+  box-sizing: border-box;
+}
+
+body {
   background-image: url('https://assetstorev1-prd-cdn.unity3d.com/package-screenshot/cac1042d-d53c-4ff8-8151-1ddc25d498ba_scaled.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+
   margin: 0;
   padding: 0 10%;
+  max-width: 1200px;
+  margin: 0 auto;
+
   text-align: left;
 }
 
+/* =========================
+   TEXTOS
+========================= */
 h1, h2, h3 {
   text-shadow: 1px 1px 4px black;
 }
 
+/* =========================
+   MENU
+========================= */
 nav ul {
   list-style: none;
   padding: 0;
-  margin: 0 auto 30px auto; 
+  margin: 0 auto 30px auto;
   display: flex;
   justify-content: center;
-  gap: 10px;
-  font-size: large;
-  width: fit-content; 
+  gap: 15px;
 }
-
-
 
 nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s;
-  
+  transition: 0.3s;
 }
 
+nav a:hover {
+  color: #00bfff;
+}
+
+/* =========================
+   SEÇÕES
+========================= */
 section, article {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
-
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.contato {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.card-contato {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 25px;
-  border-radius: 15px;
-  width: 100%;
-  max-width: 500px;
-}
+/* =========================
+   SKILLS (CONHECIMENTOS)
+========================= */
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -81,37 +81,11 @@ footer {
   height: 60px;
   margin-bottom: 10px;
 }
-#contato img {
-  transition: 0.3s;
-  cursor: pointer;
-}
 
-#contato img:hover {
-  transform: scale(1.1);
-}button {
-  width: 100%;
-  padding: 12px;
-  background: linear-gradient(90deg, #00bfff, #0077ff);
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 0.3s ease;
-  box-shadow: 0 0 10px rgba(0, 191, 255, 0.4);
-}
-
-/* efeito ao passar o mouse */
-button:hover {
-  transform: scale(1.05);
-  background: linear-gradient(90deg, #009acd, #0055cc);
-  box-shadow: 0 0 15px rgba(0, 191, 255, 0.7);
-}
-
-/* efeito ao clicar */
-button:active {
-  transform: scale(0.98);
-}#projetos {
+/* =========================
+   PROJETOS
+========================= */
+#projetos {
   text-align: center;
 }
 
@@ -130,7 +104,6 @@ button:active {
   box-shadow: 0 0 15px rgba(0, 191, 255, 0.5);
 }
 
-/* IMAGEM CLICÁVEL */
 #projetos .card img {
   width: 80px;
   height: 80px;
@@ -141,55 +114,118 @@ button:active {
 
 #projetos .card img:hover {
   transform: scale(1.1);
-}.card-info {
+}
+
+/* =========================
+   CONTATO
+========================= */
+.contato {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-contato {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 25px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+
+.card-info {
   display: block;
   background: rgba(255, 255, 255, 0.08);
   padding: 15px;
   margin: 10px 0;
   border-radius: 10px;
-  width: 100%;
-  max-width: 350px;
-  text-align: center;
-  color: white;
   text-decoration: none;
+  color: white;
   transition: 0.3s;
 }
 
 .card-info:hover {
   transform: scale(1.05);
   background: rgba(0, 191, 255, 0.25);
-  box-shadow: 0 0 12px rgba(0, 191, 255, 0.4);
-}@media (max-width: 768px) {
+}
+
+/* =========================
+   BOTÃO
+========================= */
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #00bfff, #0077ff);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #009acd, #0055cc);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* =========================
+   RESPONSIVO TABLET
+========================= */
+@media (max-width: 768px) {
 
   body {
     padding: 10px;
   }
 
-  header {
-    text-align: center;
-  }
-
   nav ul {
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
   }
-
-}@media (max-width: 768px) {
 
   .skills {
     flex-direction: column;
     align-items: center;
   }
 
-  .card {
+  #projetos .card {
     width: 90%;
-    margin: 10px 0;
   }
-
-}@media (max-width: 768px) {
 
   .card-contato {
     width: 90%;
   }
+}
 
+/* =========================
+   RESPONSIVO CELULAR
+========================= */
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .skills img {
+    width: 50px;
+    height: 50px;
+  }
+
+  #projetos .card {
+    width: 95%;
+  }
+
+  button {
+    font-size: 14px;
+  }
 }
