@@ -49,3 +49,43 @@ footer {
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.5);
 }
+.contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card-contato {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 25px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 500px;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skills .card {
+  width: 150px;
+  text-align: center;
+  padding: 15px;
+}
+
+.skills img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+#contato img {
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#contato img:hover {
+  transform: scale(1.1);
+}
