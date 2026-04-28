@@ -27,9 +27,7 @@ h1, h2, h3 {
   text-shadow: 1px 1px 4px black;
 }
 
-/* =========================
-   MENU NORMAL (DESKTOP)
-========================= */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -64,9 +62,7 @@ h1, h2, h3 {
   color: #00bfff;
 }
 
-/* =========================
-   SEÇÕES
-========================= */
+
 section, article {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 20px;
@@ -74,9 +70,7 @@ section, article {
   border-radius: 10px;
 }
 
-/* =========================
-   SKILLS
-========================= */
+
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -96,9 +90,7 @@ section, article {
   margin-bottom: 10px;
 }
 
-/* =========================
-   PROJETOS
-========================= */
+
 #projetos {
   text-align: center;
 }
@@ -130,9 +122,7 @@ section, article {
   transform: scale(1.1);
 }
 
-/* =========================
-   CONTATO
-========================= */
+
 .contato {
   display: flex;
   justify-content: center;
@@ -165,9 +155,7 @@ section, article {
   background: rgba(0, 191, 255, 0.25);
 }
 
-/* =========================
-   BOTÃO
-========================= */
+
 button {
   width: 100%;
   padding: 12px;
@@ -189,9 +177,7 @@ button:active {
   transform: scale(0.98);
 }
 
-/* =========================
-   RESPONSIVO TABLET
-========================= */
+
 @media (max-width: 768px) {
 
   body {
@@ -211,7 +197,6 @@ button:active {
     width: 90%;
   }
 
-  /* MENU HAMBÚRGUER */
   .hamburguer {
     display: block;
   }
@@ -232,9 +217,7 @@ button:active {
   }
 }
 
-/* =========================
-   RESPONSIVO CELULAR
-========================= */
+
 @media (max-width: 480px) {
 
   h1 {
@@ -292,7 +275,7 @@ button:active {
   outline: 2px solid #00bfff;
 }
 
-/* BOTÃO MAIS BONITO */
+
 .formulario button {
   width: 100%;
   padding: 12px;
@@ -308,7 +291,7 @@ button:active {
 .formulario button:hover {
   transform: scale(1.05);
   background: linear-gradient(90deg, #009acd, #0055cc);
-}/* FOTO DE PERFIL */
+}
 .foto-perfil {
   width: 170px;
   height: 170px;
